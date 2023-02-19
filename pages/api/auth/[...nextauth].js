@@ -5,7 +5,7 @@ import DiscordProvider from "next-auth/providers/discord";
 require("dotenv").config()
 
 const options = {
-  site: process.env.SITE || "http://localhost:3000",
+  site: process.env.LOCAL_URL,
 
   // Configure one or more authentication providers
   providers: [
