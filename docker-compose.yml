@@ -1,0 +1,11 @@
+version: '3.3'
+
+services:
+  app:
+    image: "next-auth-test"
+    container_name: "next-auth-test"
+    ports:
+      - 4000:4000
+    build:
+      context: .
+      dockerfile: Dockerfile
